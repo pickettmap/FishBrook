@@ -1,0 +1,251 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300,500,100|Raleway:400,800");
+.register {
+  align-items: flex-start;
+  background-color: var(--sea-serpent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 1024px;
+  padding: 0 106px;
+  width: 1440px;
+}
+.register .age {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 64px;
+}
+.register .age-field-entry {
+  align-items: center;
+  align-self: flex-end;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  min-width: 158px;
+  padding: 0 19px;
+}
+.register .age::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .first-name {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 177px;
+}
+.register .first-name::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 686px;
+  width: 450px;
+}
+.register .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 69px;
+  margin-left: 4px;
+  margin-top: 22px;
+  min-width: 364px;
+}
+.register .last-name {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 175px;
+}
+.register .last-name-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-right: 23px;
+  margin-top: 30px;
+  min-width: 349px;
+  padding: 0 19px;
+}
+.register .last-name::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .overlap-group {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.34);
+  display: flex;
+  height: 770px;
+  margin-top: 122px;
+  min-width: 1208px;
+  padding: 31px 42px;
+}
+.register .password {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 159px;
+}
+.register .password::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .picture {
+  align-self: center;
+  height: 559px;
+  margin-bottom: 63px;
+  margin-left: 46px;
+  width: 624px;
+}
+.register .place {
+  letter-spacing: 0px;
+  min-height: 129px;
+  text-align: center;
+  width: 450px;
+}
+.register .state {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 85px;
+}
+.register .state-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-left: 52px;
+  min-width: 154px;
+  padding: 0 19px;
+}
+.register .state::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .submit {
+  height: 42px;
+  letter-spacing: 0px;
+  min-height: 42px;
+  min-width: 116px;
+  text-align: center;
+}
+.register .submit-button {
+  align-items: center;
+  background-color: var(--cruise);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  height: 68px;
+  justify-content: flex-end;
+  margin-right: 45px;
+  margin-top: 30px;
+  min-width: 177px;
+  padding: 0 30px;
+}
+.register .username {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 165px;
+}
+.register .username-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-right: 11px;
+  margin-top: 6px;
+  min-width: 349px;
+  padding: 0 19px;
+}
+.register .username::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+.register .x-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-right: 11px;
+  margin-top: 30px;
+  min-width: 349px;
+  padding: 0 19px;
+}
+* {
+  box-sizing: border-box;
+}
+.roboto-light-gray-36px {
+  color: var(--gray);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-36px);
+  font-style: normal;
+  font-weight: 300;
+}
+.roboto-medium-firefly-96px {
+  color: var(--firefly);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-96px);
+  font-style: normal;
+  font-weight: 500;
+}
+.roboto-normal-evening-sea-36px {
+  color: var(--evening-sea);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-36px);
+  font-style: normal;
+  font-weight: 400;
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  display: contents;
+}

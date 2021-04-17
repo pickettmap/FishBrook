@@ -1,11 +1,21 @@
 html {
+    /* Theme Colors*/
+    --acapulco: rgba(126, 207, 163, 1);
     --cruise: rgba(184, 251, 215, 1);
     --evening-sea: rgba(13, 75, 71, 1);
     --firefly: rgba(10, 37, 43, 1);
-    --font-family-roboto: "Roboto", Helvetica;
-    --font-size-36px: 36px;
-    --font-size-96px: 96px;
     --gray: rgba(129, 129, 129, 1);
     --sea-serpent: rgba(76, 199, 192, 1);
     --white: rgba(255, 255, 255, 1);
+
+    /* Theme Fonts */
+    --font-family-raleway: "Raleway", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+
+    /* Font Sizes */
+    --font-size-18px: 18px;
+    --font-size-36px: 36px;
+    --font-size-96px: 96px;
+    --font-size-144px: 144px;
+
 }

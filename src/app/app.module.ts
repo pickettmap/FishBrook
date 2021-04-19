@@ -19,6 +19,8 @@ import { MyGroupsPageComponent } from './components/pages/my-groups-page/my-grou
 import { CreateGroupPageComponent } from './components/pages/create-group-page/create-group-page.component';
 import { RegisterFishComponent } from './components/util/register-fish/register-fish.component';
 import { RegisterGearComponent } from './components/util/register-gear/register-gear.component';
+import { NavbarComponent } from './components/ui/navbar/navbar.component';
+import { HomePageComponent } from './components/pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { RegisterGearComponent } from './components/util/register-gear/register-
     MyGroupsPageComponent,
     CreateGroupPageComponent,
     RegisterFishComponent,
-    RegisterGearComponent
+    RegisterGearComponent,
+    NavbarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

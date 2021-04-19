@@ -5,6 +5,7 @@ html {
     --evening-sea: rgba(13, 75, 71, 1);
     --firefly: rgba(10, 37, 43, 1);
     --gray: rgba(129, 129, 129, 1);
+    --magic-mint: rgba(175, 255, 211, 1);
     --sea-serpent: rgba(76, 199, 192, 1);
     --white: rgba(255, 255, 255, 1);
 
@@ -14,8 +15,10 @@ html {
 
     /* Font Sizes */
     --font-size-18px: 18px;
+    --font-size-30px: 30px;
     --font-size-36px: 36px;
     --font-size-64px: 64px;
+    --font-size-72px: 72px;
     --font-size-96px: 96px;
     --font-size-144px: 144px;
 

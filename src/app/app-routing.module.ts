@@ -13,7 +13,6 @@ import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fi
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full'},
   { path: 'welcome', component: LandingPageComponent},
   { path: 'login', component: LoginPageComponent},
   { path: 'register', component: RegisterPageComponent},
@@ -24,7 +23,8 @@ const routes: Routes = [
   { path: 'mycatches', component: MyCatchesPageComponent},
   { path: 'mygroups', component: MyGroupsPageComponent},
   { path: 'catch/:id', component: ViewCatchPageComponent},
-  { path: 'aquarium', component: ViewFishPageComponent}
+  { path: 'aquarium', component: ViewFishPageComponent},
+  { path: '', redirectTo: '/welcome', pathMatch: 'full'}
 ];
 
 @NgModule({

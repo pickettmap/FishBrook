@@ -1,0 +1,51 @@
+.display-card-content {
+    align-items: flex-start;
+    display: flex;
+    min-width: 237px;
+  }
+  .name-border {
+    height: 53px;
+    left: 0px;
+    position: absolute;
+    top: 125px;
+    width: 235px;
+  }
+  .overlap-group {
+    background-color: rgba(255,255,255,1.0);
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/card-image@2x.png);
+    background-size: 100% 100%;
+    border-radius: 30px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.25);;
+    height: 178px;
+    position: relative;
+    width: 235px;
+  }
+  .x-display-name {
+    color: rgba(0,0,0,1.0);
+    font-family: 'Roboto', Helvetica;
+    font-size: 36px;
+    font-weight: 100;
+    left: 33px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    text-align: center;
+    top: 136px;
+  }
+  
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  .grid-layout {
+    padding: 50px 0;
+    display: grid;
+    max-width: 100%;
+    grid-gap: 60px;
+    margin: 0 auto;
+    width: 95%;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }  

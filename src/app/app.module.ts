@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { LoginComponent } from './components/util/login/login.component';
 import { RegisterComponent } from './components/util/register/register.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
@@ -22,6 +23,7 @@ import { RegisterGearComponent } from './components/util/register-gear/register-
 import { NavbarComponent } from './components/ui/navbar/navbar.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { DisplaycardComponent } from './components/ui/displaycard/displaycard.component';
+import { GroupdropdownComponent } from './components/ui/groupdropdown/groupdropdown.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +46,13 @@ import { DisplaycardComponent } from './components/ui/displaycard/displaycard.co
     RegisterGearComponent,
     NavbarComponent,
     HomePageComponent,
-    DisplaycardComponent
+    DisplaycardComponent,
+    GroupdropdownComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

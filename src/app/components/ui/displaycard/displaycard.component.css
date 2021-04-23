@@ -12,7 +12,7 @@
   }
   .overlap-group {
     background-color: rgba(255,255,255,1.0);
-    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/card-image@2x.png);
+    
     background-size: 100% 100%;
     border-radius: 30px;
     box-shadow: 2px 4px 4px rgba(0,0,0,0.25);;
@@ -25,11 +25,11 @@
     font-family: 'Roboto', Helvetica;
     font-size: 36px;
     font-weight: 100;
-    left: 33px;
+    left: 30px;
     letter-spacing: 0.00px;
     position: absolute;
     text-align: center;
-    top: 136px;
+    top: 100px;
   }
   
   @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");

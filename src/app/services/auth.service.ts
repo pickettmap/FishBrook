@@ -62,5 +62,10 @@ export class AuthService {
       return this.storage.getItem('token');
     }
 
+    isLoggedIn() {
+      let token = localStorage.getItem("token");
+      return(!token===null)
+    }
+
 }
 

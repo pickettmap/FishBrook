@@ -11,19 +11,20 @@ import { RegisterPageComponent } from './components/pages/register-page/register
 import { ViewCatchPageComponent } from './components/pages/view-catch-page/view-catch-page.component';
 import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fish-page.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
   { path: 'welcome', component: LandingPageComponent},
   { path: 'login', component: LoginPageComponent},
   { path: 'register', component: RegisterPageComponent},
-  { path: 'creategroup', component: CreateGroupPageComponent},
-  { path: 'groups', component: GroupPageComponent},
-  { path: 'home', component:HomePageComponent},
-  { path: 'leaderboard', component: LeaderboardPageComponent},
-  { path: 'mycatches', component: MyCatchesPageComponent},
-  { path: 'mygroups', component: MyGroupsPageComponent},
-  { path: 'catch/:id', component: ViewCatchPageComponent},
-  { path: 'aquarium', component: ViewFishPageComponent},
+  { path: 'creategroup', component: CreateGroupPageComponent, canActivate:[AuthGuardService]},
+  { path: 'groups', component: GroupPageComponent, canActivate:[AuthGuardService]},
+  { path: 'home', component:HomePageComponent, canActivate:[AuthGuardService]},
+  { path: 'leaderboard', component: LeaderboardPageComponent, canActivate:[AuthGuardService]},
+  { path: 'mycatches', component: MyCatchesPageComponent, canActivate:[AuthGuardService]},
+  { path: 'mygroups', component: MyGroupsPageComponent, canActivate:[AuthGuardService]},
+  { path: 'catch/:id', component: ViewCatchPageComponent, canActivate:[AuthGuardService]},
+  { path: 'aquarium', component: ViewFishPageComponent, canActivate:[AuthGuardService]},
   { path: '', redirectTo: '/welcome', pathMatch: 'full'}
 ];
 

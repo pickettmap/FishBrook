@@ -63,8 +63,8 @@ export class AuthService {
     }
 
     isLoggedIn() {
-      let token = localStorage.getItem("token");
-      return(!token===null)
+      let token: string | null = localStorage.getItem("token");
+      return(token != null && token?.length > 1)
     }
 
 }

@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
-const AUTH_API = 'http://localhost:9000/authenticate/';
+const AUTH_API = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/authenticate/';
 
 const httpOptions = {
 headers: new HttpHeaders({'Content-Type':'application/json' })

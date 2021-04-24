@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Catch } from '../models/catch';
 import { AuthService} from '../services/auth.service';
 
-const baseUrl = 'http://localhost:9000/catch';
+const baseUrl = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/catch';
 
 
 

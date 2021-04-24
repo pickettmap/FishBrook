@@ -12,6 +12,7 @@
   flex-direction: column;
   min-height: 288px;
   width: 294px;
+  z-index: 2;
 }
 .my-groups {
   letter-spacing: 0px;

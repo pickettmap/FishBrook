@@ -6,6 +6,10 @@
   display: flex;
   width: 1440px;
 }
+
+.view-fish .test {
+  width: 100%;
+}
 .view-fish .display-card {
   align-items: flex-end;
   background-color: var(--white);

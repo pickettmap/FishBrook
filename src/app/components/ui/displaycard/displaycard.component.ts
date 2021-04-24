@@ -1,9 +1,8 @@
-import { Component, Injectable, Input, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
-import { map, pluck } from 'rxjs/operators';
-import { Fish, fishApi, fishDetails } from 'src/app/models';
+import { Component, OnInit } from '@angular/core';
+import { fishDetails } from 'src/app/models';
 import { FishService } from 'src/app/services/fish.service';
-
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-displaycard',
@@ -13,6 +12,7 @@ import { FishService } from 'src/app/services/fish.service';
 
 export class DisplaycardComponent implements OnInit {
   fishes: fishDetails[] = [];
+  fishPage: fishDetails[] = [];
 
   constructor(private fishService: FishService) { }
 
@@ -43,7 +43,19 @@ export class DisplaycardComponent implements OnInit {
       let fishInfo:Object = JSON.parse(JSON.stringify(details))
       details = (Object.values(fishInfo)[2])
         this.fishes.push(details["0"]);
+        this.fishPage =  this.fishes.slice(0,15);
     });
+  }
+
+  onPageChange(event: PageEvent) {
+    const startIndex = event.pageIndex * event.pageSize;
+    let endIndex = startIndex + event.pageSize;
+
+    if(endIndex > this.fishes.length) {
+      endIndex = this.fishes.length;
+    }
+
+    this.fishPage = this.fishes.slice(startIndex, endIndex);
   }
 }
 

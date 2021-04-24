@@ -19,7 +19,7 @@ export class FishService {
    }
 
   public getFish(): Observable< fishApi >{
-    return this.httpClient.get<fishApi>(`${this.api_endpoint}?limit=15`);
+    return this.httpClient.get<fishApi>(`${this.api_endpoint}?limit=100`);
   }
 
   public getFishById(id:any): Observable<fishApi> {

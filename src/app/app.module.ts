@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { LoginComponent } from './components/util/login/login.component';
@@ -24,6 +25,8 @@ import { NavbarComponent } from './components/ui/navbar/navbar.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { DisplaycardComponent } from './components/ui/displaycard/displaycard.component';
 import { GroupdropdownComponent } from './components/ui/groupdropdown/groupdropdown.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { GroupdropdownComponent } from './components/ui/groupdropdown/groupdropd
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule,
+    MatPaginatorModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

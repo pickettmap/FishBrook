@@ -1,5 +1,6 @@
 <div class="grid-layout">
-    <div class="display-card-content" *ngFor="let fish of fishes">
+
+    <div class="display-card-content" *ngFor="let fish of fishPage" routerLink="/registerfish">
         <div class="overlap-group" style="background-image: url({{fish.image}});">
           <img
             class="name-border"
@@ -8,4 +9,9 @@
           <h1 class="x-display-name">{{fish.Species}}</h1>
         </div>
       </div>
+      <mat-paginator [length] = "this.fishes.length"
+      [pageSize] = "15"
+      [pageIndex] = "0"
+      (page) = "onPageChange($event)"
+      ></mat-paginator>
 </div>

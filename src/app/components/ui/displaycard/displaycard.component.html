@@ -1,6 +1,11 @@
 <div class="grid-layout">
 
-    <div class="display-card-content" *ngFor="let fish of fishPage" routerLink="/registerfish">
+  <div id="register-fish-popup"  *ngIf="show">
+    <app-register-fish
+    [fish]="selectedFish" id = "regfish"></app-register-fish>
+  </div>
+
+    <div class="display-card-content" *ngFor="let fish of fishPage" (click)="toggle(fish)">
         <div class="overlap-group" style="background-image: url({{fish.image}});">
           <img
             class="name-border"

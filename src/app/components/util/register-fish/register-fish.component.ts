@@ -11,10 +11,11 @@ export class RegisterFishComponent implements OnInit {
 
   @Input() fish!: fishDetails;
 
+
   constructor(private fishService: FishService) { }
 
   ngOnInit(): void {
-    console.log(this.fish.SpecCode)
+    console.log(this.fish)
   }
 
   form: any = {

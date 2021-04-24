@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fishDetails } from 'src/app/models';
+import { fishDetails } from 'src/app/models/fishDetails';
 import { FishService } from 'src/app/services/fish.service';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { AfterViewInit } from '@angular/core';
@@ -13,6 +13,9 @@ import { AfterViewInit } from '@angular/core';
 export class DisplaycardComponent implements OnInit {
   fishes: fishDetails[] = [];
   fishPage: fishDetails[] = [];
+  public show: boolean = false;
+
+  selectedFish!: fishDetails;
 
   constructor(private fishService: FishService) { }
 
@@ -21,6 +24,10 @@ export class DisplaycardComponent implements OnInit {
     this.getFish();
   }
 
+  toggle(fish: fishDetails) {
+    this.selectedFish = fish;
+    this.show = !this.show;
+  }
 
   getFish(): void {
     this.fishService.getFish()
@@ -56,6 +63,10 @@ export class DisplaycardComponent implements OnInit {
     }
 
     this.fishPage = this.fishes.slice(startIndex, endIndex);
+  }
+
+  registerCatch() {
+
   }
 }
 

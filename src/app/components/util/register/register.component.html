@@ -1,44 +1,105 @@
-<form class="register" name="form1" action="form1" method="post">
+<form
+  *ngIf = "!isSuccessful"
+  name="register"
+  class="register"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f = "ngForm"
+  >
     <div class="overlap-group">
       <div class="flex-col">
         <h1 class="place roboto-medium-firefly-96px">Register</h1>
-        <div class="username-field-entry">
-          <input class="username roboto-light-gray-36px" name="username01" placeholder="Username" type="text" required />
-        </div>
-        <div class="x-field-entry">
-          <input class="password roboto-light-gray-36px" name="password01" placeholder="Password" type="text" required />
-        </div>
-        <div class="x-field-entry">
-          <input
-            class="first-name roboto-light-gray-36px"
-            name="first-name0"
-            placeholder="First Name"
+        <div class="form-group">
+          <div class="username-field-entry">
+            <input
             type="text"
+            class="username roboto-light-gray-36px"
+            name="username01"
+            [(ngModel)]="form.username"
+            #username="ngModel"
+            placeholder="Username"
             required
-          />
-        </div>
-        <div class="last-name-field-entry">
-          <input
-            class="last-name roboto-light-gray-36px"
-            name="last-name0"
-            placeholder="Last Name"
-            type="text"
-            required
-          />
-        </div>
-        <div class="flex-row">
-          <div class="age-field-entry">
-            <input class="age roboto-light-gray-36px" name="age0" placeholder="Age" type="text" required />
-          </div>
-          <div class="state-field-entry">
-            <input class="state roboto-light-gray-36px" name="state0" placeholder="State" type="text" required />
+            />
           </div>
         </div>
-        <a href="javascript:SubmitForm('form1')">
+        <div class="form-group">
+          <div class="x-field-entry">
+            <input
+              class="password roboto-light-gray-36px"
+              name="password01"
+              [(ngModel)]="form.password"
+              #username="ngModel"
+              placeholder="Password"
+              type="text"
+              required />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="x-field-entry">
+            <input
+              class="first-name roboto-light-gray-36px"
+              name="first-name0"
+              [(ngModel)]="form.firstName"
+              #username="ngModel"
+              placeholder="First Name"
+              type="text"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="last-name-field-entry">
+            <input
+              class="last-name roboto-light-gray-36px"
+              name="last-name0"
+              [(ngModel)]="form.lastName"
+              #username="ngModel"
+              placeholder="Last Name"
+              type="text"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="flex-row">
+            <div class="age-field-entry">
+              <input
+                class="age roboto-light-gray-36px"
+                name="age0"
+                [(ngModel)]="form.age"
+                #username="ngModel"
+                placeholder="Age"
+                type="text"
+                required />
+            </div>
+            <div class="state-field-entry">
+              <input
+                class="state roboto-light-gray-36px"
+                name="state0"
+                [(ngModel)]="form.state"
+                #username="ngModel"
+                placeholder="State"
+                type="text"
+                required />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="form-group">
+          <a href="javascript:SubmitForm('form1')">
+            <div class="submit-button">
+              <div class="submit valign-text-middle roboto-normal-evening-sea-36px">Register</div>
+            </div>
+          </a>
+        </div> -->
+
+        <div class="form-group">
           <div class="submit-button">
-            <div class="submit valign-text-middle roboto-normal-evening-sea-36px">Submit</div>
-          </div></a
-        >
+            <button
+            class="register-1 btn-primary btn-block valign-text-middle roboto-normal-evening-sea-36px" 
+            style="background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">Register</button>
+          </div>
+        </div>
+
       </div>
       <img
         class="picture"

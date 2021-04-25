@@ -131,24 +131,26 @@ export class RegisterGearComponent implements OnInit {
       data => {
         console.log(data);
         this.isSuccessful = true;
+
+        this.router.navigate(['/mycatches'])
       }, 
       err => {
         this.errorMessage = err.error.message;
       }
     )
 
-    //TODO: need to get ids
-    this.catchService.create(null).subscribe(
-      data => {
-        console.log(data)
-        this.isSuccessful = true;
+    // //TODO: need to get ids
+    // this.catchService.create(null).subscribe(
+    //   data => {
+    //     console.log(data)
+    //     this.isSuccessful = true;
 
-        this.router.navigate(['/mycatches'])
-      },
-      err => {
-        this.errorMessage = err.error.message;
-      }
-    )
+    //     this.router.navigate(['/mycatches'])
+    //   },
+    //   err => {
+    //     this.errorMessage = err.error.message;
+    //   }
+    // )
   }
 
 }

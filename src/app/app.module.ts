@@ -30,6 +30,7 @@ import { DisplaycardComponent } from './components/ui/displaycard/displaycard.co
 import { GroupdropdownComponent } from './components/ui/groupdropdown/groupdropdown.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DisplaygridComponent } from './components/ui/displaygrid/displaygrid.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     NavbarComponent,
     HomePageComponent,
     DisplaycardComponent,
-    GroupdropdownComponent
+    GroupdropdownComponent,
+    DisplaygridComponent
   ],
   imports: [
     BrowserModule,

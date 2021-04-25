@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fishDetails } from 'src/app/models/fishDetails';
 import { FishService } from 'src/app/services/fish.service';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { FishapiService } from 'src/app/services/fishapi.service';
 
 @Component({
   selector: 'app-displaygrid',
@@ -16,7 +17,7 @@ export class DisplaygridComponent implements OnInit {
 
   selectedFish!: fishDetails;
 
-  constructor(private fishService: FishService) { }
+  constructor(private fishService: FishapiService) { }
 
 
   ngOnInit(): void {

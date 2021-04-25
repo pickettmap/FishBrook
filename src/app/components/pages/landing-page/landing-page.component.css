@@ -135,6 +135,13 @@
   font-style: normal;
   font-weight: 400;
 }
+.roboto-normal-evening-sea-22px {
+  color: var(--evening-sea);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-22px);
+  font-style: normal;
+  font-weight: 400;
+}
 .roboto-normal-evening-sea-36px {
   color: var(--evening-sea);
   font-family: var(--font-family-roboto);

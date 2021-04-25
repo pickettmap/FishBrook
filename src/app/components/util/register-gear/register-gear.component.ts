@@ -101,7 +101,7 @@ export class RegisterGearComponent implements OnInit {
       case "SoftPlastic":
         this.form.lure="5"
         break;
-      case "SoftPlastic":
+      case "Fly":
         this.form.lure="6"
         break;
     }

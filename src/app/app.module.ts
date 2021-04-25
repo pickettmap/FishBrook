@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 import { LoginComponent } from './components/util/login/login.component';
 import { RegisterComponent } from './components/util/register/register.component';
@@ -61,6 +63,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatPaginatorModule,
     RouterModule,
     FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

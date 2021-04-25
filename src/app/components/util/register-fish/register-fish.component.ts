@@ -46,14 +46,12 @@ export class RegisterFishComponent implements OnInit {
     this.form.species = this.fish.Species
     this.form.dangerLevel = this.fish.Dangerous
     this.form.image = this.fish.image
+    this.form.habitat = this.setHabitat()
   }
 
 
   onSubmit(): void {
-    this.form.habitat = this.setHabitat()
     this.setForm() 
-
-    const submission: Fish = this.form;
 
     this.fishService.createFish(this.form).subscribe(
       data => {

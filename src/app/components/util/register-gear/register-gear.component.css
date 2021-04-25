@@ -11,13 +11,6 @@
   overflow: hidden;
   width: 483px;
 }
-.register-gear-popup .drop-down-arrow {
-  height: 8px;
-  left: 312px;
-  position: absolute;
-  top: 35px;
-  width: 20px;
-}
 .register-gear-popup .dropdown-content {
   align-items: flex-start;
   display: flex;
@@ -87,6 +80,7 @@
   letter-spacing: 0px;
   min-height: 42px;
   width: 308px;
+  border: 0;
 }
 .register-gear-popup .text-2 {
   letter-spacing: 0px;

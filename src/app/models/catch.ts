@@ -1,4 +1,4 @@
-export class Catch {
+export interface Catch {
     id?: number;
     username?: string;
     fishId?: number;

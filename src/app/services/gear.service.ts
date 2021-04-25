@@ -12,6 +12,7 @@ export class GearService {
   constructor(private httpClient: HttpClient) { }
 
   public createGear(data: any): Observable<any> {
+    console.log(JSON.stringify(data))
     return this.httpClient.post(this.database_endpoint, data);
   }
 }

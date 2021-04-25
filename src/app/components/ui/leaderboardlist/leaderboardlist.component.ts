@@ -12,30 +12,41 @@ export class LeaderboardlistComponent implements OnInit {
   page = 1;
   count = 0;
   pageSize = 3;
-  leaderboardUsers: Angler[] = [];
+  leaderboardUsers: any[] = [];
+  other:any[] = [];
 
   constructor(private userService : UserService) { }
 
   ngOnInit(): void {
-    this.getAnglers
+    this.getAnglers()
   }
 
   getAnglers() : void{
     this.userService.getAnglers()
     .subscribe(
-      (response) => {this.leaderboardUsers.push(response)})
+      (response: any) => {
+        this.leaderboardUsers.push(response.content)
+        for(let index in this.leaderboardUsers[0]) {
+          if(response.content[index].catches.length) {
+            this.other.push(response.content[index])
+          }
+        }
+      }
+      )
+
+      
   }
 
   
-  handlePageChange(event: number): void {
-    this.page = event;
-    this.getAnglers();
-  }
+  // handlePageChange(event: number): void {
+  //   this.page = event;
+  //   this.getAnglers();
+  // }
 
-  handlePageSizeChange(event: any): void {
-    this.pageSize = event.target.value;
-    this.page = 1;
-    this.getAnglers();
-  }
+  // handlePageSizeChange(event: any): void {
+  //   this.pageSize = event.target.value;
+  //   this.page = 1;
+  //   this.getAnglers();
+  // }
 
 }

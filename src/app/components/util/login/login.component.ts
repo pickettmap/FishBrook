@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
   };
   isSuccessful = false;
   isSignUpFailed = false;
-  errorMessage = '';
+  errorMessage = ''
+  
 
   constructor(private authService : AuthService, private router:Router) { }
 

@@ -1,4 +1,4 @@
-<div class="create-groups">
+<!-- <div class="create-groups">
     <div class="overlap-group">
       <div class="page-template-content">
         <app-navbar></app-navbar>
@@ -18,4 +18,54 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <form
+  *ngIf = "!isSuccessful"
+  name = "group"
+  class = "group"
+  (ngSubmit) = "f.form.valid && onSubmit()"
+  #f = "ngForm">
+
+  <div class="create-groups">
+    <div class="overlap-group">
+      <div class="page-template-content">
+        <app-navbar></app-navbar>
+      </div>
+      <div class="create-group-page-content">
+        <div class="overlap-group2">
+          <div class="create-group-header roboto-bold-firefly-48px">Create Group</div>
+          <div class="group-name-field-entry">
+            <input class="entry-name-i232688 roboto-light-gray-36px"
+            type = "text"
+            name = "groupName"
+            [(ngModel)] = "form.name"
+            #groupname = "ngModel"
+            placeholder="Group Name"
+            required
+            />
+          </div>
+          <div class="group-description-text-entry">
+            <label for="groupdescription" class="entry-name"></label>
+              <textarea class="overlap-group1 roboto-light-gray-36px"
+              type = "text"
+              name = "groupDescription"
+              [(ngModel)] = "form.description"
+              #groupname = "ngModel"
+              placeholder="Group Description..."
+              required
+              ></textarea>
+          </div>
+          <div class="create-button">
+            <button class = "button-text-i23280 valign-text-middle roboto-normal-evening-sea-36px"
+            style = "background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">
+            Create
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+</form>

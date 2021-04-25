@@ -1,0 +1,106 @@
+.button-content {
+    align-items: flex-start;
+    display: flex;
+    height: 68px;
+    left: 808px;
+    min-width: 179px;
+    position: absolute;
+    top: 185px;
+  }
+  .display-card-content {
+    align-items: flex-start;
+    display: flex;
+    height: 178px;
+    left: 27px;
+    min-width: 237px;
+    position: absolute;
+    top: 39px;
+  }
+  .group-description {
+    left: 291px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 39px;
+    width: 704px;
+  }
+  .group-entry-base {
+    background-color: var(--white);
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    height: 260px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1007px;
+  }
+  .group-entry-content {
+    align-items: flex-start;
+    display: flex;
+    min-width: 1011px;
+  }
+  .group-member-count {
+    left: 55px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    text-align: center;
+    top: 229px;
+    width: 181px;
+  }
+  .join-i85119814 {
+    height: 28px;
+    letter-spacing: 0.00px;
+    min-height: 28px;
+    min-width: 49px;
+    text-align: center;
+  }
+  .name-border {
+    height: 53px;
+    left: 0px;
+    position: absolute;
+    top: 125px;
+    width: 235px;
+  }
+  .overlap-group {
+    height: 262px;
+    position: relative;
+    width: 1007px;
+  }
+  .overlap-group1 {
+    align-items: center;
+    background-color: var(--cruise);
+    border-radius: 30px;
+    display: flex;
+    height: 68px;
+    justify-content: flex-end;
+    min-width: 177px;
+    padding: 0 63px;
+  }
+  .overlap-group2 {
+    background-color: var(--white);
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/card-image@2x.png);
+    background-size: 100% 100%;
+    border-radius: 30px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+    height: 178px;
+    position: relative;
+    width: 235px;
+  }
+  .text-1 {
+    left: 18px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    text-align: center;
+    top: 136px;
+  }
+  
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+  * {
+    box-sizing: border-box;
+  }
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

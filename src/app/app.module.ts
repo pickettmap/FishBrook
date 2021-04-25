@@ -32,9 +32,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { DisplaygridComponent } from './components/util/displaygrid/displaygrid.component';
 import { LeaderboardentryComponent } from './components/ui/leaderboardentry/leaderboardentry.component';
-import { LeaderboardlistComponent } from './components/ui/leaderboardlist/leaderboardlist.component';
+import { LeaderboardlistComponent } from './components/util/leaderboardlist/leaderboardlist.component';
 import { GroupentryComponent } from './components/ui/groupentry/groupentry.component';
-import { GrouplistComponent } from './components/ui/grouplist/grouplist.component';
+import { GrouplistComponent } from './components/util/grouplist/grouplist.component';
 
 @NgModule({
   declarations: [

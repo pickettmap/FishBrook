@@ -8,7 +8,7 @@ import { fishApi } from '../models/fishApi';
   providedIn: 'root'
 })
 export class FishService {
-  database_endpoint = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/fish'
+  baseUrl = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/fish'
 
   constructor(private httpClient: HttpClient) {
     
@@ -16,6 +16,10 @@ export class FishService {
 
   public createFish(data: any): Observable<any> {
     console.log(JSON.stringify(data))
-    return this.httpClient.post(this.database_endpoint, data);
+    return this.httpClient.post(this.baseUrl, data);
+  }
+
+  public getById(id: any): Observable<any> {
+    return this.httpClient.get(`${this.baseUrl}/${id}`)
   }
 }

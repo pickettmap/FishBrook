@@ -50,8 +50,4 @@ export class CatchService {
     return this.http.delete(baseUrl);
   }
 
-  findByAngler(Angler: any): Observable<Catch[]> {
-    return this.http.get<Catch[]>(`${baseUrl}?Angler=${Angler}`);
-  }
-
 }

@@ -1,1 +1,13 @@
-<p>catch-list works!</p>
+<div class="grid-layout">
+    <div class="display-card-content" *ngFor="let fish of fishPage">
+        <app-displaycard
+        [fish]="fish"></app-displaycard>
+    </div>
+</div>
+
+<mat-paginator
+[length] = "this.anglerFish.length"
+[pageSize] = "15"
+[pageIndex] = "0"
+(page) = "onPageChange($event)"
+></mat-paginator>

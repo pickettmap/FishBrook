@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fishDetails } from 'src/app/models/fishDetails';
-import { FishService } from 'src/app/services/fish.service';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { PageEvent } from '@angular/material/paginator';
 import { FishapiService } from 'src/app/services/fishapi.service';
 
 @Component({

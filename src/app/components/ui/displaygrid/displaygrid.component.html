@@ -9,10 +9,13 @@
         <app-displaycard
         [fish]="fish"></app-displaycard>
     </div>
+</div>
 
-    <mat-paginator [length] = "this.fishes.length"
-    [pageSize] = "15"
-    [pageIndex] = "0"
-    (page) = "onPageChange($event)"
-    ></mat-paginator>
-  </div>
+
+
+<mat-paginator
+[length] = "this.fishes.length"
+[pageSize] = "15"
+[pageIndex] = "0"
+(page) = "onPageChange($event)"
+></mat-paginator>

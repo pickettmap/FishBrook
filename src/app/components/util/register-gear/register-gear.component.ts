@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { Gear } from 'src/app/models/gear';
+import { CatchService } from 'src/app/services/catch.service';
 import { GearService } from 'src/app/services/gear.service';
 
 @Component({
@@ -22,7 +23,7 @@ export class RegisterGearComponent implements OnInit {
   errorMessage = '';
   isSuccessful = false;
 
-  constructor(private gearService: GearService, private router:Router) { }
+  constructor(private gearService: GearService, private catchService: CatchService, private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -130,9 +131,20 @@ export class RegisterGearComponent implements OnInit {
       data => {
         console.log(data);
         this.isSuccessful = true;
+      }, 
+      err => {
+        this.errorMessage = err.error.message;
+      }
+    )
+
+    //TODO: need to get ids
+    this.catchService.create(null).subscribe(
+      data => {
+        console.log(data)
+        this.isSuccessful = true;
 
         this.router.navigate(['/mycatches'])
-      }, 
+      },
       err => {
         this.errorMessage = err.error.message;
       }

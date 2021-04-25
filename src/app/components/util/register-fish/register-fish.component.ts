@@ -58,6 +58,8 @@ export class RegisterFishComponent implements OnInit {
         // console.log(data);
         this.isSuccessful = true;
 
+        //TODO: change popup in view fish page
+
         this.router.navigate(['/registergear'])
       },
       err => {

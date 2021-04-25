@@ -31,6 +31,7 @@ export class AuthService {
      observable.subscribe(res=>{
         if(res.jwt){
          localStorage.setItem("token",res.jwt);
+         localStorage.setItem("username",username);
         }
       });
       console.log(localStorage.getItem("token"));
@@ -51,9 +52,11 @@ export class AuthService {
       observable.subscribe(res=>{
         if(res.jwt){
          localStorage.setItem("token",res.jwt);
+         localStorage.setItem("username",username);
         }
       });
       console.log(localStorage.getItem("token"));
+      console.log(localStorage.getItem("username"))
       
       return observable;
     }
@@ -65,6 +68,11 @@ export class AuthService {
     isLoggedIn() {
       let token: string | null = localStorage.getItem("token");
       return(token != null && token?.length > 1)
+    }
+
+    logout() {
+      localStorage.setItem("token","")
+      localStorage.setItem("username","")
     }
 
 }

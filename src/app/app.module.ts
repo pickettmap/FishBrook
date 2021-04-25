@@ -31,6 +31,10 @@ import { GroupdropdownComponent } from './components/ui/groupdropdown/groupdropd
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { DisplaygridComponent } from './components/ui/displaygrid/displaygrid.component';
+import { LeaderboardentryComponent } from './components/ui/leaderboardentry/leaderboardentry.component';
+import { LeaderboardlistComponent } from './components/ui/leaderboardlist/leaderboardlist.component';
+import { GroupentryComponent } from './components/ui/groupentry/groupentry.component';
+import { GrouplistComponent } from './components/ui/grouplist/grouplist.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +59,11 @@ import { DisplaygridComponent } from './components/ui/displaygrid/displaygrid.co
     HomePageComponent,
     DisplaycardComponent,
     GroupdropdownComponent,
-    DisplaygridComponent
+    DisplaygridComponent,
+    LeaderboardentryComponent,
+    LeaderboardlistComponent,
+    GroupentryComponent,
+    GrouplistComponent
   ],
   imports: [
     BrowserModule,

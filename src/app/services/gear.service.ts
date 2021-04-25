@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GearService {
 
-  database_endpoint = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/fish'
+  database_endpoint = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/gear'
 
   constructor(private httpClient: HttpClient) { }
 

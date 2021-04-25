@@ -27,6 +27,8 @@ export class FishService {
   }
 
   public createFish(data: any): Observable<any> {
+    console.log(JSON.stringify(data))
     return this.httpClient.post(this.database_endpoint, data);
   }
 }
+

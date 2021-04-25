@@ -12,6 +12,7 @@ import { ViewCatchPageComponent } from './components/pages/view-catch-page/view-
 import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fish-page.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { AuthGuardService } from './services/auth-guard.service'
+import { RegisterGearComponent } from './components/util/register-gear/register-gear.component';
 
 const routes: Routes = [
   { path: 'welcome', component: LandingPageComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'home', component:HomePageComponent, canActivate:[AuthGuardService]},
   { path: 'leaderboard', component: LeaderboardPageComponent, canActivate:[AuthGuardService]},
   { path: 'mycatches', component: MyCatchesPageComponent, canActivate:[AuthGuardService]},
+  { path: 'registergear', component: RegisterGearComponent, canActivate:[AuthGuardService]},
   { path: 'mygroups', component: MyGroupsPageComponent, canActivate:[AuthGuardService]},
   { path: 'catch/:id', component: ViewCatchPageComponent, canActivate:[AuthGuardService]},
   { path: 'aquarium', component: ViewFishPageComponent, canActivate:[AuthGuardService]},

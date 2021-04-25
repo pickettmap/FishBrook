@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Fish } from 'src/app/models/fish';
 import { fishDetails } from 'src/app/models/fishDetails';
 import { FishService } from 'src/app/services/fish.service';
 
@@ -10,16 +12,11 @@ import { FishService } from 'src/app/services/fish.service';
 export class RegisterFishComponent implements OnInit {
 
   @Input() fish!: fishDetails;
-
-
-  constructor(private fishService: FishService) { }
-
-  ngOnInit(): void {
-    console.log(this.fish)
-  }
+  errorMessage = '';
+  isSuccessful = false;
 
   form: any = {
-    id: null,
+    // id: null,
     species: null,
     length: null,
     weight: null,
@@ -28,25 +25,47 @@ export class RegisterFishComponent implements OnInit {
     image: null
   }
 
+  constructor(private fishService: FishService, private router:Router) { }
+
+  ngOnInit(): void {
+    console.log(this.fish.SpecCode)
+  }
+
+  setHabitat(): string {
+    if(this.fish.Fresh) {
+      return "0"
+    }
+    if(this.fish.Saltwater) {
+      return "1"
+    }
+    return ''
+  }
+
+  setForm() {
+    // this.form.id = this.fish.SpecCode
+    this.form.species = this.fish.Species
+    this.form.dangerLevel = this.fish.Dangerous
+    this.form.image = this.fish.image
+  }
+
 
   onSubmit(): void {
-    const {} =  this.form;
+    this.form.habitat = this.setHabitat()
+    this.setForm() 
+
+    const submission: Fish = this.form;
+
+    this.fishService.createFish(this.form).subscribe(
+      data => {
+        // console.log(data);
+        this.isSuccessful = true;
+
+        this.router.navigate(['/registergear'])
+      },
+      err => {
+        this.errorMessage = err.error.message;
+      }
+    );
 
   }
-  // onSubmit():void{
-  //   const{ username, password} = this.form;
-  //   this.authService.login(username, password).subscribe(
-  //     data => {
-  //       console.log(data);
-  //       this.isSuccessful= true;
-  //       this.isSignUpFailed=false;
-
-  //       this.router.navigate(['/home'])
-  //     },
-  //     err => {
-  //       this.errorMessage = err.error.message;
-  //       this.isSignUpFailed= true;
-  //     }
-  //   );
-  // }
 }

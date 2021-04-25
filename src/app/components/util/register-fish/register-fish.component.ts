@@ -59,7 +59,8 @@ export class RegisterFishComponent implements OnInit {
         this.isSuccessful = true;
 
         //TODO: change popup in view fish page
-
+        console.log(data.id)
+        localStorage.setItem("fishid",data.id)
         this.router.navigate(['/registergear'])
       },
       err => {

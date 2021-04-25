@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { Gear } from 'src/app/models/gear';
+import { Catch } from 'src/app/models/catch';
 import { CatchService } from 'src/app/services/catch.service';
 import { GearService } from 'src/app/services/gear.service';
 
@@ -10,6 +11,12 @@ import { GearService } from 'src/app/services/gear.service';
   styleUrls: ['./register-gear.component.css']
 })
 export class RegisterGearComponent implements OnInit {
+
+   catchsubmission: Catch = {
+    username: '',
+    fishId: 0,
+    gearId: 0
+   }
   
 
   form: any = {
@@ -126,31 +133,42 @@ export class RegisterGearComponent implements OnInit {
   onSubmit(): void {
     const submission: Gear = this.form;
     this.setFormEnums()
-
+    
     this.gearService.createGear(submission).subscribe (
       data => {
-        console.log(data);
         this.isSuccessful = true;
+        console.log(data.id)
+        localStorage.setItem("gearid",data.id)
 
-        this.router.navigate(['/mycatches'])
+        this.sendCatch();
       }, 
       err => {
         this.errorMessage = err.error.message;
       }
     )
 
-    // //TODO: need to get ids
-    // this.catchService.create(null).subscribe(
-    //   data => {
-    //     console.log(data)
-    //     this.isSuccessful = true;
+   
+  }
 
-    //     this.router.navigate(['/mycatches'])
-    //   },
-    //   err => {
-    //     this.errorMessage = err.error.message;
-    //   }
-    // )
+  sendCatch() {
+    this.catchsubmission.username = localStorage.getItem("username")!
+    this.catchsubmission.fishId = Number(localStorage.getItem("fishid")!)
+    this.catchsubmission.gearId = Number(localStorage.getItem("gearid")!)
+
+  this.catchService.create(this.catchsubmission).subscribe(
+    data => {
+      console.log(data)
+      this.isSuccessful = true;
+
+      localStorage.removeItem("fishid")
+      localStorage.removeItem("gearid")
+
+      this.router.navigate(['/mycatches'])
+    },
+    err => {
+      this.errorMessage = err.error.message;
+    }
+  )
   }
 
 }

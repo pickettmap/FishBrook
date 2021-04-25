@@ -16,14 +16,6 @@ export class FishService {
 
   public createFish(data: any): Observable<any> {
     console.log(JSON.stringify(data))
-    const observable =  this.httpClient.post(this.database_endpoint, data);
-
-    // observable.subscribe(res => {
-    //   if(res) {
-    //     localStorage.setItem("fishcatchid",res)
-    //   }
-    // })
-
-    return observable;
+    return this.httpClient.post(this.database_endpoint, data);
   }
 }

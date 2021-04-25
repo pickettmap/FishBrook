@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 
 const AUTH_API = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/authenticate/';
@@ -47,7 +48,7 @@ export class AuthService {
         lastName,
         age,
         state
-      }, httpOptions);
+      }, httpOptions).pipe(share());
 
       observable.subscribe(res=>{
         if(res.jwt){

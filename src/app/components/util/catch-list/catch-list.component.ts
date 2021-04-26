@@ -19,7 +19,7 @@ export class CatchListComponent implements OnInit {
   anglerFish: fishDetails[] = [];
   fishPage: fishDetails[] = [];
 
-  constructor(private userService: UserService, private catchService: CatchService, private fishService: FishService) { }
+  constructor(private userService: UserService, private fishService: FishService) { }
 
   ngOnInit(): void {
     this.getAngler()

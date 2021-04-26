@@ -35,6 +35,7 @@ import { LeaderboardentryComponent } from './components/ui/leaderboardentry/lead
 import { LeaderboardlistComponent } from './components/util/leaderboardlist/leaderboardlist.component';
 import { GroupentryComponent } from './components/ui/groupentry/groupentry.component';
 import { GrouplistComponent } from './components/util/grouplist/grouplist.component';
+import { MyGrouplistComponent } from './components/util/my-grouplist/my-grouplist.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { GrouplistComponent } from './components/util/grouplist/grouplist.compon
     LeaderboardentryComponent,
     LeaderboardlistComponent,
     GroupentryComponent,
-    GrouplistComponent
+    GrouplistComponent,
+    MyGrouplistComponent
   ],
   imports: [
     BrowserModule,

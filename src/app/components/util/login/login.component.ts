@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
       err => {
         this.errorMessage = err.error.message;
         this.isSignUpFailed= true;
+        this.router.navigate(['/aquarium'])
       }
     );
   }

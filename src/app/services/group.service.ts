@@ -25,4 +25,8 @@ export class GroupService {
   join(data: any, groupname: string): Observable<any> {
     return this.http.put(`${baseUrl}/${groupname}/join`, data)
   }
+
+  getGroup(id: any): Observable<any> {
+    return this.http.get<any>(`${baseUrl}/${id}`)
+  }
 }

@@ -28,7 +28,7 @@ export class RegisterFishComponent implements OnInit {
   constructor(private fishService: FishService, private router:Router) { }
 
   ngOnInit(): void {
-    console.log(this.fish.SpecCode)
+    // console.log(this.fish.SpecCode)
   }
 
   setHabitat(): string {
@@ -59,7 +59,7 @@ export class RegisterFishComponent implements OnInit {
         this.isSuccessful = true;
 
         //TODO: change popup in view fish page
-        console.log(data.id)
+        // console.log(data.id)
         localStorage.setItem("fishid",data.id)
         this.router.navigate(['/registergear'])
       },

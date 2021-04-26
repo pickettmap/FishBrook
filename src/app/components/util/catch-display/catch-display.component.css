@@ -1,0 +1,350 @@
+.back-button {
+    align-items: flex-start;
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    height: 68px;
+    margin-right: 1.0px;
+    margin-top: 31px;
+    min-width: 177px;
+    padding: 11px 46px;
+  }
+  .bait-i2350823356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 64px;
+  }
+  .bait-type-i2350823 {
+    letter-spacing: 0.00px;
+    margin-left: 193px;
+    min-height: 42px;
+    min-width: 131px;
+    text-align: center;
+  }
+  .bobber-type-i23532 {
+    letter-spacing: 0.00px;
+    margin-left: 182px;
+    min-height: 42px;
+    min-width: 50px;
+    text-align: center;
+  }
+  .bullet-point {
+    height: 15px;
+    width: 15px;
+  }
+  .caught-fish-info {
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    min-height: 678px;
+    padding: 51px 0;
+    width: 567px;
+  }
+  .caught-fish-info-list {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.0px;
+    margin-top: 55px;
+    min-height: 281px;
+    padding: 7px 10px;
+    width: 448px;
+  }
+  .danger-level-data-i2 {
+    left: 290px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 84px;
+  }
+  .field-data-i233852 {
+    letter-spacing: 0.00px;
+    margin-left: 181px;
+    min-height: 42px;
+    min-width: 131px;
+    text-align: center;
+  }
+  .field-data-i233892 {
+    letter-spacing: 0.00px;
+    margin-left: 158px;
+    min-height: 42px;
+    min-width: 50px;
+    text-align: center;
+  }
+  .field-data-i233972 {
+    letter-spacing: 0.00px;
+    margin-left: 155px;
+    min-height: 42px;
+    min-width: 112px;
+    text-align: center;
+  }
+  .field-i2338523356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 76px;
+  }
+  .field-i2338923356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 139px;
+  }
+  .field-i2339323356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 112px;
+  }
+  .field-i2339723356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 111px;
+  }
+  .fish-avatar {
+    height: 122px;
+    left: 8px;
+    position: absolute;
+    top: 3px;
+    width: 128px;
+  }
+  .fish-info-content {
+    align-items: flex-end;
+    display: flex;
+    height: 120px;
+    min-width: 517px;
+  }
+  .fish-info-entry-border {
+    background-color: var(--apricot-peach);
+    height: 120px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 507px;
+  }
+  .fishhook-type-i2350 {
+    letter-spacing: 0.00px;
+    margin-left: 122px;
+    min-height: 42px;
+    min-width: 106px;
+    text-align: center;
+  }
+  .flex-row {
+    align-items: flex-start;
+    display: flex;
+    min-width: 1176px;
+  }
+  .gear-used-info {
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    height: 678px;
+    margin-left: 42px;
+    min-width: 567px;
+    padding: 45px 58px;
+  }
+  .gear-used-info-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 564px;
+    padding: 0 12px;
+    width: 450px;
+  }
+  .habitat-data-i23427 {
+    left: 231px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 47px;
+  }
+  .list-entry-content {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 4.0px;
+    min-width: 414px;
+  }
+  .list-entry-content-1 {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    height: 42px;
+    margin-top: 33px;
+    min-width: 424px;
+  }
+  .list-entry-content-2 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 2.0px;
+    margin-top: 33px;
+    min-width: 383px;
+  }
+  .list-entry-content-3 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 4.0px;
+    margin-top: 33px;
+    min-width: 411px;
+  }
+  .list-entry-content-4 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 2.0px;
+    margin-top: 33px;
+    min-width: 411px;
+  }
+  .list-entry-content-5 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 4.0px;
+    margin-top: 33px;
+    min-width: 383px;
+  }
+  .list-entry-content-6 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    margin-left: 2.0px;
+    margin-top: 6px;
+    min-width: 414px;
+  }
+  .lure-type-i2350723 {
+    letter-spacing: 0.00px;
+    margin-left: 226px;
+    min-height: 42px;
+    min-width: 50px;
+    text-align: center;
+  }
+  .overlap-group {
+    height: 126px;
+    margin-bottom: -5.6px;
+    position: relative;
+    width: 507px;
+  }
+  .place {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 71px;
+  }
+  .place-1 {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxl);
+    height: 42px;
+    letter-spacing: 0.00px;
+    min-height: 42px;
+    min-width: 82px;
+    text-align: center;
+  }
+  .rod-i2351023356 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 66px;
+  }
+  .rod-type-i2351023 {
+    letter-spacing: 0.00px;
+    margin-left: 200px;
+    min-height: 42px;
+    min-width: 112px;
+    text-align: center;
+  }
+  .sinkweight-data-i23 {
+    letter-spacing: 0.00px;
+    margin-left: 123px;
+    min-height: 42px;
+    min-width: 50px;
+    text-align: center;
+  }
+  .text-1 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 174px;
+  }
+  .text-2 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 115px;
+  }
+  .text-3 {
+    letter-spacing: 0.00px;
+    margin-left: 19px;
+    min-height: 42px;
+    min-width: 147px;
+  }
+  .text-4 {
+    left: 139px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 84px;
+  }
+  .text-5 {
+    left: 138px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 47px;
+  }
+  .text-6 {
+    left: 138px;
+    letter-spacing: 0.00px;
+    position: absolute;
+    top: 4px;
+    width: 213px;
+  }
+  .title {
+    align-self: flex-start;
+    color: var(--piper);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxxxxxl);
+    letter-spacing: 9.60px;
+    margin-left: 5px;
+    min-height: 134px;
+    min-width: 405px;
+    text-align: center;
+    width: 405px;
+  }
+  .view-catch-page-content {
+    align-items: center;
+    background-color: var(--riptide);
+    border-radius: 50px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.34);
+    display: flex;
+    flex-direction: column;
+    min-height: 835px;
+    padding: 16px 0;
+    width: 1286px;
+  }
+  .weight-i233932336 {
+    letter-spacing: 0.00px;
+    margin-left: 157px;
+    min-height: 42px;
+    min-width: 106px;
+    text-align: center;
+  }
+  
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+  * {
+    box-sizing: border-box;
+  }
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

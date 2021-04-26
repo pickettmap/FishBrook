@@ -1,5 +1,11 @@
 <div class="grid-layout">
-    <div class="display-card-content" *ngFor="let fish of fishPage">
+    
+    <div id="view-catch-popup" *ngIf="show">
+        <app-catch-display
+        [singleCatch]="selectedCatch"></app-catch-display>
+    </div>
+
+    <div class="display-card-content" *ngFor="let fish of fishPage" (click)="toggle(fish)">
         <app-displaycard
         [fish]="fish"></app-displaycard>
     </div>

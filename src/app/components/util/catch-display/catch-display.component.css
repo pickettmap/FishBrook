@@ -1,3 +1,7 @@
+  
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+
 .back-button {
     align-items: flex-start;
     border: 2px solid var(--white);
@@ -336,9 +340,7 @@
     min-width: 106px;
     text-align: center;
   }
-  
-  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+
   * {
     box-sizing: border-box;
   }

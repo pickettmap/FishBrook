@@ -1,3 +1,5 @@
+  
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 .header {
     height: 100px;
     left: -1px;
@@ -40,8 +42,7 @@
     top: 40px;
     width: 84px;
   }
-  
-  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
   * {
     box-sizing: border-box;
   }

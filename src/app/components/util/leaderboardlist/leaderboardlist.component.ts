@@ -25,8 +25,11 @@ export class LeaderboardlistComponent implements OnInit {
     this.userService.getAnglers()
     .subscribe(
       (response: any) => {
+        // console.log(response)
         this.leaderboardUsers.push(response.content)
-        for(let index in this.leaderboardUsers[0]) {
+        this.leaderboardUsers = this.leaderboardUsers[0]
+        
+        for(let index in this.leaderboardUsers) {
           if(response.content[index].catches.length) {
             this.other.push(response.content[index])
           }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { min } from 'rxjs/operators';
 import { Angler } from 'src/app/models/angler';
 import { Catch } from 'src/app/models/catch';
 import { Fish } from 'src/app/models/fish';
@@ -14,8 +15,11 @@ import { FishService } from 'src/app/services/fish.service';
 export class LeaderboardentryComponent implements OnInit {
 
   @Input() angler!:any
+  @Input() rank!:number
   catch!: Catch;
   fish!: Fish;
+  noName = false;
+  
 
   constructor(private fishService : FishService,private catchService : CatchService) { }
 
@@ -25,10 +29,10 @@ export class LeaderboardentryComponent implements OnInit {
   }
 
   setFish() {
+    if(this.angler.firstName == null || this.angler.lastName == null) {
+      this.noName = true;
+    }
     if(this.angler.catches.length > 0) {
-      for(let catchy of this.angler.catches) {
-          console.log(catchy)
-      }
       this.findMaxFish()
     }
 

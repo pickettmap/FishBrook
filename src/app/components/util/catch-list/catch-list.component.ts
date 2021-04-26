@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Angler } from 'src/app/models/angler';
 import { Catch } from 'src/app/models/catch';
 import { fishDetails } from 'src/app/models/fishDetails';
-import { CatchService } from 'src/app/services/catch.service';
 import { FishService } from 'src/app/services/fish.service';
 import { UserService } from 'src/app/services/user.service';
 import { PageEvent } from '@angular/material/paginator';

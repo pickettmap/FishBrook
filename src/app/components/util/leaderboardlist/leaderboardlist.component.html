@@ -1,6 +1,7 @@
 <ul>
-    <li class="leaderboard-content" *ngFor="let user of other">
+    <li class="leaderboard-content" *ngFor="let user of other; index as i">
         <app-leaderboardentry
-        [angler]="user"></app-leaderboardentry>
+        [angler]="user"
+        [rank]="i+1"></app-leaderboardentry>
     </li>
 </ul>

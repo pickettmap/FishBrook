@@ -22,7 +22,9 @@ export class GrouplistComponent implements OnInit {
       (response: any) => {
         for(let group of response) {
           console.log(group)
-          this.groups.push(group)
+          if(group.anglers){
+            this.groups.push(group)
+          }
         }
       }
     )

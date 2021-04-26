@@ -7,7 +7,7 @@
   width: 1440px;
 }
 .my-catches-2-2 .my-catches-grid {
-  align-items: flex-start;
+  align-items: flex-end;
   display: flex;
   background-color: var(--hit-pink);
   flex-direction: column;
@@ -15,7 +15,7 @@
   left: 38px;
   min-height: 478px;
   position: absolute;
-  top: 263px;
+  top: 163px;
   width: 1363px;
 }
 .my-catches-2-2 .overlap-group {

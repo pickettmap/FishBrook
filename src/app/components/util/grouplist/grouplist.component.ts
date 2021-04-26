@@ -21,9 +21,14 @@ export class GrouplistComponent implements OnInit {
     this.groupService.getAll().subscribe(
       (response: any) => {
         for(let group of response) {
-          console.log(group)
+          // console.log(group)
           if(group.anglers){
             this.groups.push(group)
+          }
+          else {
+            this.groupService.getGroup(group).subscribe(
+              data => this.groups.push(data)
+            )
           }
         }
       }

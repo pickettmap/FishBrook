@@ -27,6 +27,5 @@ export class MyGrouplistComponent implements OnInit {
         this.groups = data.groups;
       }
     )
-
   }
 }

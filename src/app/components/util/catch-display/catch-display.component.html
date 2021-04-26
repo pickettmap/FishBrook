@@ -1,1 +1,94 @@
-<p>catch-display works!</p>
+<div class="view-catch-page-content">
+    <div class="flex-row">
+      <div class="caught-fish-info">
+        <div class="fish-info-content">
+          <div class="overlap-group">
+            <div class="fish-info-entry-border"></div>
+            <img
+              class="fish-avatar"
+              src="{{singleCatch.fish.image}}"
+            />
+            <div class="text-4 roboto-normal-piper-24px">Danger Level:</div>
+            <div class="text-5 roboto-normal-piper-24px">Habitat:</div>
+            <div class="text-6 roboto-normal-citrine-36px">{{singleCatch.fish.species}}</div>
+            <div class="habitat-data-i23427 roboto-light-tuscany-24px">{{singleCatch.fish.habitat | lowercase}}</div>
+            <div class="danger-level-data-i2 roboto-light-tuscany-24px">{{singleCatch.fish.dangerLevel}}</div>
+          </div>
+        </div>
+        <div class="caught-fish-info-list">
+          <div class="list-entry-content">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point-3@2x.png"
+            />
+            <div class="field-i2339723356 roboto-light-evening-sea-36px">Length</div>
+            <div class="field-data-i233972 roboto-light-puerto-rico-36px">{{singleCatch.fish.length}}m</div>
+          </div>
+          <div class="list-entry-content-3">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point@2x.png"
+            />
+            <div class="field-i2339323356 roboto-light-evening-sea-36px">Weight</div>
+            <div class="weight-i233932336 roboto-light-puerto-rico-36px">{{singleCatch.fish.weight}}lbs</div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="gear-used-info">
+        <ul class="gear-used-info-list">
+          <h1 class="title">Gear</h1>
+          <li class="list-entry-content-6">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point-3@2x.png"
+            />
+            <div class="rod-i2351023356 roboto-light-evening-sea-36px">Rod</div>
+            <div class="rod-type-i2351023 roboto-light-puerto-rico-36px">{{singleCatch.gear.rod}}</div>
+          </li>
+          <li class="list-entry-content-4">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point@2x.png"
+            />
+            <div class="text-3 roboto-light-evening-sea-36px">Fishhook</div>
+            <div class="fishhook-type-i2350 roboto-light-puerto-rico-36px">{{singleCatch.gear.fishhook}}</div>
+          </li>
+          <li class="list-entry-content-1">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point-3@2x.png"
+            />
+            <div class="bait-i2350823356 roboto-light-evening-sea-36px">Bait</div>
+            <div class="bait-type-i2350823 roboto-light-puerto-rico-36px">{{singleCatch.gear.bait}}</div>
+          </li>
+          <li class="list-entry-content-2">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point@2x.png"
+            />
+            <div class="place roboto-light-evening-sea-36px">Lure</div>
+            <div class="lure-type-i2350723 roboto-light-puerto-rico-36px">{{singleCatch.gear.lure}}</div>
+          </li>
+          <li class="list-entry-content-2">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point@2x.png"
+            />
+            <div class="text-2 roboto-light-evening-sea-36px">Bobber</div>
+            <div class="bobber-type-i23532 roboto-light-puerto-rico-36px">{{singleCatch.gear.bobber}}</div>
+          </li>
+          <li class="list-entry-content-2">
+            <img
+              class="bullet-point"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6074ae6f11c6ad9a56067743/releases/607f0b8a636b54e6f9b33f8a/img/bullet-point@2x.png"
+            />
+            <div class="text-1 roboto-light-evening-sea-36px">Sinkweight</div>
+            <div class="sinkweight-data-i23 roboto-light-puerto-rico-36px">{{singleCatch.gear.sinkWeight}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="back-button" (click)="sendMessage()"><div class="place-1 valign-text-middle">Back</div></div>
+  </div>

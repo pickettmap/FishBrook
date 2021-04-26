@@ -1,6 +1,6 @@
 export interface Fish {
   id?: number;
-  species?: string;
+  Species?: string;
   length?: number;
   weight?: number;
   habitat?: string;

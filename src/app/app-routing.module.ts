@@ -8,7 +8,6 @@ import { LeaderboardPageComponent } from './components/pages/leaderboard-page/le
 import { MyCatchesPageComponent } from './components/pages/my-catches-page/my-catches-page.component';
 import { MyGroupsPageComponent } from './components/pages/my-groups-page/my-groups-page.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
-import { ViewCatchPageComponent } from './components/pages/view-catch-page/view-catch-page.component';
 import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fish-page.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { AuthGuardService } from './services/auth-guard.service'
@@ -25,7 +24,6 @@ const routes: Routes = [
   { path: 'mycatches', component: MyCatchesPageComponent, canActivate:[AuthGuardService]},
   { path: 'registergear', component: RegisterGearComponent, canActivate:[AuthGuardService]},
   { path: 'mygroups', component: MyGroupsPageComponent, canActivate:[AuthGuardService]},
-  { path: 'catch/:id', component: ViewCatchPageComponent, canActivate:[AuthGuardService]},
   { path: 'aquarium', component: ViewFishPageComponent, canActivate:[AuthGuardService]},
   { path: '', redirectTo: '/welcome', pathMatch: 'full'}
 ];

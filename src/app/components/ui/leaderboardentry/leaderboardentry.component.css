@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+
 .fish-data {
   letter-spacing: 0.00px;
   margin-left: 274px;
@@ -43,8 +46,6 @@
   font-weight: 400;
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
 * {
   box-sizing: border-box;
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Angler } from '../models/angler';
 import { Group } from '../models/group';
 
 const baseUrl = 'http://project2fisapp-env.eba-rpk7wuxb.us-west-1.elasticbeanstalk.com/group';
@@ -19,5 +20,13 @@ export class GroupService {
 
   create(data: any): Observable<any> {
     return this.http.post(baseUrl, data);
+  }
+
+  join(data: any, groupname: string): Observable<any> {
+    return this.http.put(`${baseUrl}/${groupname}/join`, data)
+  }
+
+  getGroup(id: any): Observable<any> {
+    return this.http.get<any>(`${baseUrl}/${id}`)
   }
 }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewCatchPageComponent } from './view-catch-page.component';
+import { MyGrouplistComponent } from './my-grouplist.component';
 
-describe('ViewCatchPageComponent', () => {
-  let component: ViewCatchPageComponent;
-  let fixture: ComponentFixture<ViewCatchPageComponent>;
+describe('MyGrouplistComponent', () => {
+  let component: MyGrouplistComponent;
+  let fixture: ComponentFixture<MyGrouplistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewCatchPageComponent ]
+      declarations: [ MyGrouplistComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewCatchPageComponent);
+    fixture = TestBed.createComponent(MyGrouplistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

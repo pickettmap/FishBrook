@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Angler } from 'src/app/models/angler';
 import { Catch } from 'src/app/models/catch';
 import { fishDetails } from 'src/app/models/fishDetails';
-import { CatchService } from 'src/app/services/catch.service';
 import { FishService } from 'src/app/services/fish.service';
 import { UserService } from 'src/app/services/user.service';
 import { PageEvent } from '@angular/material/paginator';
+import { Fish } from 'src/app/models/fish';
 
 @Component({
   selector: 'app-catch-list',
@@ -16,13 +16,30 @@ export class CatchListComponent implements OnInit {
 
   currentAngler!: Angler;
   anglerCatches: any[] = [];
-  anglerFish: fishDetails[] = [];
-  fishPage: fishDetails[] = [];
+  anglerFish: any[] = [];
+  fishPage: any[] = [];
+  show: boolean = false;
 
-  constructor(private userService: UserService, private catchService: CatchService, private fishService: FishService) { }
+  selectedCatch!:Catch;
+
+  constructor(private userService: UserService, private fishService: FishService) { }
 
   ngOnInit(): void {
     this.getAngler()
+  }
+
+  toggle(fish: Fish){
+    for(let catchy of this.anglerCatches) {
+      if(fish.id == catchy.fish.id) {
+        this.selectedCatch = catchy;
+        console.log(this.selectedCatch)
+      }
+    }
+    this.show = !this.show;
+  }
+
+  recieveMessage($event: boolean) {
+    this.show = $event
   }
 
   getAngler() {
@@ -41,7 +58,7 @@ export class CatchListComponent implements OnInit {
       id = JSON.parse(JSON.stringify(catches)).fish.id
       this.fishService.getById(id).subscribe( 
         (data:any) => {
-          console.log(data);
+          // console.log(data);
           this.anglerFish.push(data)
           this.fishPage =  this.anglerFish.slice(0,15);
         }

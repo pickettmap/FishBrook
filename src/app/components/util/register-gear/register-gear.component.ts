@@ -25,7 +25,7 @@ export class RegisterGearComponent implements OnInit {
     bait: null,
     lure: null,
     bobber: null,
-    sinkweight: null
+    sinkweight: 1
   }
   errorMessage = '';
   isSuccessful = false;
@@ -131,13 +131,12 @@ export class RegisterGearComponent implements OnInit {
   }
 
   onSubmit(): void {
-    const submission: Gear = this.form;
+    const submission: any = this.form;
     this.setFormEnums()
     
     this.gearService.createGear(submission).subscribe (
       data => {
         this.isSuccessful = true;
-        console.log(data.id)
         localStorage.setItem("gearid",data.id)
 
         this.sendCatch();

@@ -14,7 +14,6 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { RegisterPageComponent} from './components/pages/register-page/register-page.component';
 import { LandingPageComponent } from './components/pages/landing-page/landing-page.component';
 import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fish-page.component';
-import { ViewCatchPageComponent } from './components/pages/view-catch-page/view-catch-page.component';
 import { MyCatchesPageComponent } from './components/pages/my-catches-page/my-catches-page.component';
 import { CatchDisplayComponent } from './components/util/catch-display/catch-display.component';
 import { CatchListComponent } from './components/util/catch-list/catch-list.component';
@@ -35,6 +34,7 @@ import { LeaderboardentryComponent } from './components/ui/leaderboardentry/lead
 import { LeaderboardlistComponent } from './components/util/leaderboardlist/leaderboardlist.component';
 import { GroupentryComponent } from './components/ui/groupentry/groupentry.component';
 import { GrouplistComponent } from './components/util/grouplist/grouplist.component';
+import { MyGrouplistComponent } from './components/util/my-grouplist/my-grouplist.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,6 @@ import { GrouplistComponent } from './components/util/grouplist/grouplist.compon
     RegisterPageComponent,
     LandingPageComponent,
     ViewFishPageComponent,
-    ViewCatchPageComponent,
     MyCatchesPageComponent,
     CatchDisplayComponent,
     CatchListComponent,
@@ -63,7 +62,8 @@ import { GrouplistComponent } from './components/util/grouplist/grouplist.compon
     LeaderboardentryComponent,
     LeaderboardlistComponent,
     GroupentryComponent,
-    GrouplistComponent
+    GrouplistComponent,
+    MyGrouplistComponent
   ],
   imports: [
     BrowserModule,

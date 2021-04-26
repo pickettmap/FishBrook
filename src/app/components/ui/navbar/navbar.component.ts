@@ -11,12 +11,18 @@ export class NavbarComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
+  show:boolean=false;
+
   ngOnInit(): void {
   }
 
   logout() {
     this.authService.logout()
     this.router.navigate(['/welcome'])
+  }
+
+  toggle(){
+    this.show = !this.show
   }
 
 }

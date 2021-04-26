@@ -4,7 +4,7 @@
       
       <ul class="menu-content">
         <li>
-          <h1 class="text-1 raleway-normal-white-72px" routerLink="/home">FishBrook</h1>
+          <h1 class="text-1 raleway-normal-white-72px" routerLink="/aquarium">FishBrook</h1>
         </li>
 
         <li class="view-fish">
@@ -23,13 +23,13 @@
           </li>
         </div>
         
-        <ul>
-        <li class="groups">
-          <div class="view-fish-i853058-2 valign-text-middle roboto-light-magic-mint-30px" routerLink="/groups">Groups</div>
-          <ul><app-groupdropdown></app-groupdropdown></ul>
-      
+        <li class="groups" ng-app="testApp" ng-controller="testCtrl">
+          <div class="view-fish-i853058-2 valign-text-middle roboto-light-magic-mint-30px groupHover" 
+          (click)="toggle()">Groups</div>
+          <div  class = "dropdown" *ngIf="show">          
+            <app-groupdropdown></app-groupdropdown>
+          </div>
         </li>
-      </ul>
 
         <li>
             <img

@@ -12,7 +12,7 @@ export class DisplaygridComponent implements OnInit {
 
   fishes: fishDetails[] = [];
   fishPage: fishDetails[] = [];
-  public show: boolean = false;
+  show: boolean = false;
 
   selectedFish!: fishDetails;
 

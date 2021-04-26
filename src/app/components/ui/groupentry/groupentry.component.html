@@ -2,8 +2,9 @@
   <div class="overlap-group">
     <div class="group-entry-base border-1px-quill-gray"></div>
     <div class="button-content">
-      <div class="overlap-group1">
-        <div class="join-i85119814 valign-text-middle roboto-normal-evening-sea-24px">Join</div>
+      <div class="overlap-group1" *ngIf="show">
+        <button class="join-i85119814 valign-text-middle roboto-normal-evening-sea-24px" (click)="join()"
+        style="background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">Join</button>
       </div>
     </div>
     <div class="group-description roboto-normal-black-18px">

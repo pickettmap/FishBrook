@@ -1,7 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Angler } from 'src/app/models/angler';
 import { Fish } from 'src/app/models/fish';
 import { fishDetails } from 'src/app/models/fishDetails';
 import { Group } from 'src/app/models/group';
+import { GroupService } from 'src/app/services/group.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-groupentry',
@@ -11,6 +14,8 @@ import { Group } from 'src/app/models/group';
 export class GroupentryComponent implements OnInit {
 
   @Input() group!:any
+  @Input() show!:boolean
+
   image:string = ""
   
   fishConversion: fishDetails = {
@@ -23,6 +28,13 @@ export class GroupentryComponent implements OnInit {
     PicPrefferedName:"",
     image:""
   };
+
+
+  constructor(private groupService: GroupService, private userService: UserService) { }
+
+  ngOnInit(): void {
+    this.createBadFish()
+  }
 
   findAnyImage() {
     for(let angler of this.group.anglers) {
@@ -47,11 +59,18 @@ export class GroupentryComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  join() {
 
-  ngOnInit(): void {
-    this.createBadFish()
+    this.userService.getAnglerByUsername().subscribe(
+      data=> {
 
+        this.groupService.join(data, this.group.name).subscribe(
+          data => {
+            console.log(data)
+          }
+        )
+      }
+    )
   }
 
 }

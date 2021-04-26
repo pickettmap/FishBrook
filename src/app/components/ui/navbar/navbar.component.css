@@ -35,18 +35,6 @@
   z-index: 10;
 }
 
-/* ul li:hover ul {
-  display: block;
-}
-
-ul li ul {
-  position: fixed;
-  top:100px;
-  right: auto;
-  width: auto;
-  display: none;
-} */
-
 .leaderboard {
   align-items: flex-end;
   cursor: pointer;

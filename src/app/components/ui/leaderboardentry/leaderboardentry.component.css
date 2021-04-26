@@ -3,17 +3,17 @@
 
 .fish-data {
   letter-spacing: 0.00px;
-  margin-left: 274px;
+  margin-left: auto;
   min-height: 35px;
   min-width: 242px;
-  text-align: center;
+  text-align: left;
 }
 .full-name {
   letter-spacing: 0.00px;
   margin-left: 179px;
   min-height: 35px;
   min-width: 200px;
-  text-align: center;
+  text-align: left;
 }
 .leaderboard-entry-content {
   align-items: flex-start;
@@ -23,6 +23,7 @@
 }
 .overlap-group {
   align-items: flex-start;
+  text-align: center;
   background-color: var(--white);
   display: flex;
   height: 66px;
@@ -43,7 +44,7 @@
   font-family: var(--font-family-roboto);
   font-size: var(--font-size-30px);
   font-style: light;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 * {

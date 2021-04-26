@@ -12,7 +12,7 @@
   flex-direction: column;
   min-height: 288px;
   
-  width: 294px;
+  width: 200px;
   z-index: 2;
 }
 .my-groups {
@@ -61,13 +61,17 @@
   justify-content: flex-end;
   min-width: 294px;
 }
+
+.x-groups-option:hover .overlap-group, .x-groups-option:hover .overlap-group1, .x-groups-option:hover .overlap-group2{
+  background-color: var(--sea-serpent);
+}
 * {
   box-sizing: border-box;
 }
 .roboto-normal-evening-sea-36px {
   color: var(--evening-sea);
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-36px);
+  font-size: var(--font-size-24px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }

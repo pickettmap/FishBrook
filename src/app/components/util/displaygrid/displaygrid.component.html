@@ -1,9 +1,15 @@
 <div class="grid-layout">
 
+  <div class="popupcontainer">
     <div id="register-fish-popup"  *ngIf="show">
-      <app-register-fish
+      <app-register-fish (messageEvent)="recieveMessage($event)"
       [fish]="selectedFish" id = "regfish"></app-register-fish>
     </div>
+
+    <div id="register-gear-popup" *ngIf="showgear">
+      <app-register-gear></app-register-gear>
+    </div>
+  </div>
   
     <div class="display-card-content" *ngFor="let fish of fishPage" (click)="toggle(fish)">
         <app-displaycard

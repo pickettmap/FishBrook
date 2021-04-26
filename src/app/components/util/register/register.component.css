@@ -45,7 +45,8 @@
   padding: 0;
   resize: none;
   text-align: left;
-  width: 177px;
+  /* width: 177px; */
+  width: 308px;
 }
 .register .first-name::placeholder {
   color: rgba(129, 129, 129, 0.6);
@@ -75,7 +76,8 @@
   padding: 0;
   resize: none;
   text-align: left;
-  width: 175px;
+  /* width: 175px; */
+  width: 308px;
 }
 .register .last-name-field-entry {
   align-items: center;
@@ -113,7 +115,8 @@
   padding: 0;
   resize: none;
   text-align: left;
-  width: 159px;
+  /* width: 308px; */
+  width: 308px;
 }
 .register .password::placeholder {
   color: rgba(129, 129, 129, 0.6);
@@ -126,6 +129,7 @@
   width: 624px;
 }
 .register .place {
+  color: var(--evening-sea);
   letter-spacing: 0px;
   min-height: 129px;
   text-align: center;
@@ -187,7 +191,8 @@
   padding: 0;
   resize: none;
   text-align: left;
-  width: 165px;
+  /* width: 165px; */
+  width: 308px;
 }
 .register .username-field-entry {
   align-items: center;

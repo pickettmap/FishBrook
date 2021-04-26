@@ -13,4 +13,19 @@
   #register-fish-popup {
     z-index: 10;
     display: block;
+    position: absolute;
+    left: 400px;
+  }
+
+  #register-gear-popup {
+    z-index: 10;
+    display:block;
+    position: absolute;
+    left: 400px;
+  }
+
+  .popupcontainer{
+    width: 100%;
+    align-content: center;
+    position: absolute;
   }

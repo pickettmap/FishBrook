@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Fish } from 'src/app/models/fish';
 import { fishDetails } from 'src/app/models/fishDetails';
@@ -10,6 +10,12 @@ import { FishService } from 'src/app/services/fish.service';
   styleUrls: ['./register-fish.component.css']
 })
 export class RegisterFishComponent implements OnInit {
+
+  gearshow: boolean = false
+  @Output() messageEvent = new EventEmitter<boolean>();
+  sendMessage() {
+    this.messageEvent.emit(this.gearshow)
+  }
 
   @Input() fish!: fishDetails;
   errorMessage = '';
@@ -61,7 +67,9 @@ export class RegisterFishComponent implements OnInit {
         //TODO: change popup in view fish page
         // console.log(data.id)
         localStorage.setItem("fishid",data.id)
-        this.router.navigate(['/registergear'])
+        this.gearshow=true
+        this.sendMessage()
+        // this.router.navigate(['/registergear'])
       },
       err => {
         this.errorMessage = err.error.message;

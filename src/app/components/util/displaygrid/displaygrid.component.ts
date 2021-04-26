@@ -13,11 +13,15 @@ export class DisplaygridComponent implements OnInit {
   fishes: fishDetails[] = [];
   fishPage: fishDetails[] = [];
   show: boolean = false;
+  showgear: boolean = false;
 
   selectedFish!: fishDetails;
 
   constructor(private fishService: FishapiService) { }
 
+  recieveMessage($event: boolean) {
+    this.showgear = $event
+  }
 
   ngOnInit(): void {
     this.getFish();
@@ -25,7 +29,7 @@ export class DisplaygridComponent implements OnInit {
 
   toggle(fish: fishDetails) {
     this.selectedFish = fish;
-    this.show = !this.show;
+    this.show = true;
   }
 
   getFish(): void {

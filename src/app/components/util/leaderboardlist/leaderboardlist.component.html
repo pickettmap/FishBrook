@@ -1,5 +1,6 @@
 <ul>
-    <li class="leaderboard-content" *ngFor="let user of other; index as i">
+    <li class="leaderboard-content" *ngFor="let user of other; index as i" 
+    style="background-color: var(--evening-sea);">
         <app-leaderboardentry
         [angler]="user"
         [rank]="i+1"></app-leaderboardentry>

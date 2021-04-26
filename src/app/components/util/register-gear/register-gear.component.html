@@ -1,0 +1,121 @@
+<form
+*ngIf = "!isSuccessful"
+class="register-gear-popup"
+name="form1"
+(ngSubmit) = "f.form.valid && onSubmit()"
+#f = "ngForm">
+    <div class="overlap-group">
+      <h1 class="text-7 roboto-bold-firefly-64px">Register Gear</h1>
+    </div>
+
+    <div class="overlap-group-1">
+    <div class="x-field-entry">
+    <label for="rodmenu" class="text-5 roboto-light-gray-36px" >Rod</label>
+    <select id="rodmenu"
+      name="rod"
+      [(ngModel)]="form.rod"
+      #rod = "ngModel"
+      type="text"
+      required>
+      <option>None</option>
+      <option value="Casting">Casting</option>
+      <option value = "Spinning">Spinning</option>
+      <option value = "Light">Light</option>
+      <option value="Fly">Fly</option>
+      <option value="Surf">Surf</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="overlap-group-1">
+    <div class="x-field-entry">
+    <label for="fishhookmenu" class="text-4 roboto-light-gray-36px">FishHook</label>
+    <select id="fishhookmenu"
+      name="rod"
+      [(ngModel)]="form.fishhook"
+      #fishhook = "ngModel"
+      type="text"
+      required>
+      <option value="None">None</option>
+      <option value="Bait">Bait</option>
+      <option value = "Jig">Jig</option>
+      <option value = "Siwash">Siwash</option>
+      <option value="Sickle">Sickle</option>
+      <option value="Treble">Treble</option>
+    </select>
+  </div></div> 
+
+<div class="overlap-group-1">
+  <div class="x-field-entry">
+    <label for="baitmenu" class="text-3 roboto-light-gray-36px">Bait</label>
+    <select id="baitmenu"
+      name="bait"
+      [(ngModel)]="form.bait"
+      #bait = "ngModel"
+      type="text"
+      required>
+      <option value="None">None</option>
+      <option value="Live">Live</option>
+      <option value = "Plastic">Plastic</option>
+    </select>
+  </div></div> 
+    
+  <div class="overlap-group-1">
+    <div class="x-field-entry">
+    <label for="luremenu" class="place roboto-light-gray-36px">Lure</label>
+    <select id="luremenu"
+      name="lure"
+      [(ngModel)]="form.lure"
+      #lure = "ngModel"
+      type="text"
+      required>
+      <option value="None">None</option>
+      <option value="Plug">Plug</option>
+      <option value = "Jig">Jig</option>
+      <option value = "Spinner">Spinner</option>
+      <option value="Spoon">Spoon</option>
+      <option value="SoftPlastic">Soft Plastic</option>
+      <option value="Fly">Fly</option>
+    </select>
+  </div></div> 
+
+    <div class="overlap-group-1">
+      <div class="x-field-entry">
+    <label for="bobbermenu" class="text-2 roboto-light-gray-36px">Bobber</label>
+    <select id="bobbermenu"
+      name="bobber"
+      [(ngModel)]="form.bobber"
+      #bobber = "ngModel"
+      type="text"
+      required>
+      <option value="None">None</option>
+      <option value="Fixed">Fixed</option>
+      <option value = "Slip">Slip</option>
+      <option value = "Stop">Stop</option>
+    </select>
+  </div></div> 
+    
+    <div class="sink-weight-field-entry">
+        <input class="text-1 roboto-light-gray-36px"
+          name="sinkweight"
+          [(ngModel)]="form.sinkweight"
+          #sinkweight="ngModel"
+          placeholder="Sink Weight"
+          type="text"
+          required />
+    </div>
+
+    <div class="submit-button">
+      <button class="text-6 valign-text-middle roboto-normal-evening-sea-36px"
+      style="background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">
+        Submit
+      </button>
+    </div>
+</form>
+
+
+
+
+
+
+  

@@ -1,0 +1,86 @@
+<form
+  *ngIf = "!isSuccessful"
+  name="login"
+  class="login"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f = "ngForm"
+  >
+
+  <!-- <form
+  *ngIf="!isSuccessful"
+  name="form"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f="ngForm"
+  novalidate
+> -->
+
+  <div class="overlap-group"
+>
+
+    <div class="flex-col"
+>
+      <h1 class="login-header roboto-medium-firefly-96px"
+>Welcome</h1>
+      <div class="login-subheader roboto-light-firefly-36px"
+>Become an Angler Today!</div>
+      <div class="form-group">
+        <div class="username-field-entry">
+          <input 
+            type="text"
+            class="username roboto-light-gray-36px"
+            name="username" 
+            [(ngModel)]="form.username"
+            #username="ngModel"
+            placeholder="Username"
+            required
+            />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="password-field-entry">
+          <input 
+            type="password"
+            class="password roboto-light-gray-36px"
+            name="password" 
+            [(ngModel)]="form.password"
+            #username="ngModel"
+            placeholder="Password"
+            required
+            />
+        </div>
+      </div>
+      
+      
+      <div class="flex-row"
+>
+        <div class="form-group">
+          <div class="login-button">
+            <button
+            class="login-1 btn-primary btn-block valign-text-middle roboto-normal-evening-sea-36px" 
+            style="background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">Login</button>
+          </div>
+        </div>
+
+        <!-- <div class="form-group">
+          <div class="register-button">
+            <button
+            class="register-1 btn-primary btn-block valign-text-middle roboto-normal-evening-sea-36px" 
+            style="background: transparent;box-shadow: 0px 0px 0px transparent; border: 0px solid transparent; text-shadow: 0px 0px 0px transparent;">Register</button>
+          </div>
+        </div> -->
+
+        <div class="form-group">
+          <div class="register-button">
+            <div class="register-1 valign-text-middle roboto-normal-evening-sea-36px" routerLink="/register">Register</div>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+    <img
+      class="angler-vector-art"
+
+      src="../../../../assets/login page silhouette.png"
+    />
+  </div>

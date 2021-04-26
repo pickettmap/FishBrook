@@ -1,0 +1,16 @@
+.grid-layout {
+    padding: 50px 0;
+    display: grid;
+    max-width: 100%;
+    grid-gap: 60px;
+    margin: 0 auto;
+    width: 95%;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  } 
+
+  
+  #register-fish-popup {
+    z-index: 10;
+    display: block;
+  }

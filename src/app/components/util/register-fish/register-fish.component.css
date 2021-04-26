@@ -1,0 +1,137 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300,500,100|Raleway:400,800");
+.register-fish-popup {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.34);
+  display: flex;
+  flex-direction: column;
+  height: 770px;
+  overflow: hidden;
+  padding: 20px 14px;
+  width: 483px;
+}
+.register-fish-popup .date-caught-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-left: 8px;
+  margin-top: 33px;
+  min-width: 365px;
+  padding: 0 19px;
+}
+.register-fish-popup .location-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-left: 8px;
+  margin-top: 32px;
+  min-width: 365px;
+  padding: 0 19px;
+}
+.register-fish-popup .new-catch-i850118 {
+  height: 42px;
+  letter-spacing: 0px;
+  min-height: 42px;
+  min-width: 77px;
+  text-align: center;
+}
+.register-fish-popup .next-button {
+  align-items: center;
+  background-color: var(--cruise);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  height: 68px;
+  justify-content: flex-end;
+  margin-left: 2px;
+  margin-top: 33px;
+  min-width: 177px;
+  padding: 0 49px;
+}
+.register-fish-popup .species-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-left: 10px;
+  min-width: 349px;
+  padding: 0 19px;
+}
+.register-fish-popup .text-1 {
+  align-self: flex-end;
+  letter-spacing: 0px;
+  min-height: 129px;
+  text-align: center;
+  width: 450px;
+}
+.register-fish-popup .x-field-entry {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px rgba(130, 119, 119, 0.21);
+  display: flex;
+  height: 68px;
+  margin-left: 10px;
+  margin-top: 33px;
+  min-width: 349px;
+  padding: 0 19px;
+}
+.register-fish-popup .x-i850118 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 42px;
+  letter-spacing: 0px;
+  line-height: normal;
+  padding: 0;
+  resize: none;
+  text-align: left;
+  width: 308px;
+}
+.register-fish-popup .x-i850118::placeholder {
+  color: rgba(129, 129, 129, 0.6);
+}
+* {
+  box-sizing: border-box;
+}
+.roboto-bold-firefly-64px {
+  color: var(--firefly);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-64px);
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-light-gray-36px {
+  color: var(--gray);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-36px);
+  font-style: normal;
+  font-weight: 300;
+}
+.roboto-normal-evening-sea-36px {
+  color: var(--evening-sea);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-36px);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  display: contents;
+}

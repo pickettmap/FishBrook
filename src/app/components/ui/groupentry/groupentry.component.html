@@ -1,0 +1,18 @@
+<div class="group-entry-content">
+  <div class="overlap-group">
+    <div class="group-entry-base border-1px-quill-gray"></div>
+    <div class="button-content">
+      <div class="overlap-group1">
+        <div class="join-i85119814 valign-text-middle roboto-normal-evening-sea-24px">Join</div>
+      </div>
+    </div>
+    <div class="group-description roboto-normal-black-18px">
+      {{group.description}}
+    </div>
+    <div class="display-card-content">
+      <app-displaycard
+      [fish]="fishConversion"></app-displaycard>
+    </div>
+    <div class="group-member-count roboto-light-black-24px">{{group.anglers.length}}/20 Members</div>
+  </div>
+</div>

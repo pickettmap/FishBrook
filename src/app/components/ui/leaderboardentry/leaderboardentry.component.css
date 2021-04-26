@@ -1,0 +1,50 @@
+.fish-data {
+  letter-spacing: 0.00px;
+  margin-left: 274px;
+  min-height: 35px;
+  min-width: 242px;
+  text-align: center;
+}
+.full-name {
+  letter-spacing: 0.00px;
+  margin-left: 179px;
+  min-height: 35px;
+  min-width: 200px;
+  text-align: center;
+}
+.leaderboard-entry-content {
+  align-items: flex-start;
+  display: flex;
+  height: 64px;
+  min-width: 1157px;
+}
+.overlap-group {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 66px;
+  margin-left: -1px;
+  margin-top: -1px;
+  min-width: 1153px;
+  padding: 14px 17px;
+}
+.rank {
+  letter-spacing: 0.00px;
+  min-height: 35px;
+  min-width: 29px;
+  text-align: center;
+}
+
+.roboto-light-evening-sea-30px {
+  color: var(--evening-sea);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-30px);
+  font-style: light;
+  font-weight: 400;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto:400,700,300,500,100");
+* {
+  box-sizing: border-box;
+}

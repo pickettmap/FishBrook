@@ -1,11 +1,42 @@
 html {
+    /* Theme Colors*/
+    --acapulco: rgba(126, 207, 163, 1);
+    --alto: rgba(217, 217, 217, 1);
+    --apricot-peach: rgba(255, 201, 178, 1);
+    --black: rgba(0, 0, 0, 1);
+    --celeste: rgba(208, 208, 208, 1);
+    --citrine: rgba(150, 58, 18, 1);
     --cruise: rgba(184, 251, 215, 1);
+    --desert-storm: rgba(248, 248, 248, 1);
     --evening-sea: rgba(13, 75, 71, 1);
     --firefly: rgba(10, 37, 43, 1);
-    --font-family-roboto: "Roboto", Helvetica;
-    --font-size-36px: 36px;
-    --font-size-96px: 96px;
     --gray: rgba(129, 129, 129, 1);
+    --hit-pink: rgba(255, 167, 130, 1);
+    --magic-mint: rgba(175, 255, 211, 1);
+    --magic-mint-2: rgba(175, 255, 211, 0.37);
+    --piper: rgba(200, 98, 54, 1);
+    --puerto-rico: rgba(72, 184, 171, 1);
+    --quill-gray: rgba(211, 211, 211, 1);
+    --riptide: rgba(138, 224, 213, 0.92);
     --sea-serpent: rgba(76, 199, 192, 1);
+    --tuscany: rgba(187, 95, 56, 1);
     --white: rgba(255, 255, 255, 1);
+
+    /* Theme Fonts */
+    --font-family-raleway: "Raleway", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+
+    /* Font Sizes */
+    --font-size-18px: 18px;
+    --font-size-24px: 24px;
+    --font-size-30px: 30px;
+    --font-size-36px: 36px;
+    --font-size-xxxl: 48px;
+    --font-size-64px: 64px;
+    --font-size-72px: 72px;
+    --font-size-96px: 96px;
+    --font-size-144px: 144px;
+
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

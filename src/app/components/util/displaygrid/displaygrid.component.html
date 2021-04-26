@@ -1,0 +1,21 @@
+<div class="grid-layout">
+
+    <div id="register-fish-popup"  *ngIf="show">
+      <app-register-fish
+      [fish]="selectedFish" id = "regfish"></app-register-fish>
+    </div>
+  
+    <div class="display-card-content" *ngFor="let fish of fishPage" (click)="toggle(fish)">
+        <app-displaycard
+        [fish]="fish"></app-displaycard>
+    </div>
+</div>
+
+
+
+<mat-paginator
+[length] = "this.fishes.length"
+[pageSize] = "15"
+[pageIndex] = "0"
+(page) = "onPageChange($event)"
+></mat-paginator>

@@ -14,16 +14,16 @@ export class MyGrouplistComponent implements OnInit {
   groups: any[] = []
   currentAngler!: Angler;
 
-  constructor(private groupService: GroupService, private userService: UserService) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.getAngler()
+    this.getGroups()
   }
 
-  getAngler(): void{
+  getGroups(): void{
     this.userService.getAnglerByUsername().subscribe(
       data=> {
-        this.currentAngler = data;
+        // console.log(data.groups)
         this.groups = data.groups;
       }
     )

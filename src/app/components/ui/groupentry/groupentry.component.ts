@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Angler } from 'src/app/models/angler';
 import { Fish } from 'src/app/models/fish';
 import { fishDetails } from 'src/app/models/fishDetails';
@@ -30,7 +31,7 @@ export class GroupentryComponent implements OnInit {
   };
 
 
-  constructor(private groupService: GroupService, private userService: UserService) { }
+  constructor(private groupService: GroupService, private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
     this.createBadFish()
@@ -67,6 +68,7 @@ export class GroupentryComponent implements OnInit {
         this.groupService.join(data, this.group.name).subscribe(
           data => {
             console.log(data)
+            this.router.navigate(['/mygroups'])
           }
         )
       }

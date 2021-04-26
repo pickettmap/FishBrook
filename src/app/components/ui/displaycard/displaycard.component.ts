@@ -11,14 +11,15 @@ import { AfterViewInit } from '@angular/core';
 })
 
 export class DisplaycardComponent implements OnInit {
-
+  @Input() fish!: fishDetails;
 
   constructor() { }
 
 
   ngOnInit(): void {
+    // console.log(this.fish.image)
   }
 
-  @Input() fish!: fishDetails;
+  
 }
 

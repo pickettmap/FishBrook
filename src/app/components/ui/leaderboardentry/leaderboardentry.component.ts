@@ -17,7 +17,7 @@ export class LeaderboardentryComponent implements OnInit {
   @Input() angler!:any
   @Input() rank!:number
   catch!: Catch;
-  fish!: Fish;
+  fish!: any;
   noName = false;
   
 

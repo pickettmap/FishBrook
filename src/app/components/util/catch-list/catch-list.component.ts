@@ -38,6 +38,10 @@ export class CatchListComponent implements OnInit {
     this.show = !this.show;
   }
 
+  recieveMessage($event: boolean) {
+    this.show = $event
+  }
+
   getAngler() {
     this.userService.getAnglerByUsername().subscribe(
       data=> {

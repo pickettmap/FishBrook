@@ -14,7 +14,6 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { RegisterPageComponent} from './components/pages/register-page/register-page.component';
 import { LandingPageComponent } from './components/pages/landing-page/landing-page.component';
 import { ViewFishPageComponent } from './components/pages/view-fish-page/view-fish-page.component';
-import { ViewCatchPageComponent } from './components/pages/view-catch-page/view-catch-page.component';
 import { MyCatchesPageComponent } from './components/pages/my-catches-page/my-catches-page.component';
 import { CatchDisplayComponent } from './components/util/catch-display/catch-display.component';
 import { CatchListComponent } from './components/util/catch-list/catch-list.component';
@@ -46,7 +45,6 @@ import { MyGrouplistComponent } from './components/util/my-grouplist/my-grouplis
     RegisterPageComponent,
     LandingPageComponent,
     ViewFishPageComponent,
-    ViewCatchPageComponent,
     MyCatchesPageComponent,
     CatchDisplayComponent,
     CatchListComponent,

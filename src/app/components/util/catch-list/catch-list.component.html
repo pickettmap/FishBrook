@@ -1,7 +1,7 @@
 <div class="grid-layout">
     
     <div id="view-catch-popup" *ngIf="show">
-        <app-catch-display
+        <app-catch-display (messageEvent)="recieveMessage($event)"
         [singleCatch]="selectedCatch"></app-catch-display>
     </div>
 

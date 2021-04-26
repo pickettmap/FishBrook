@@ -27,7 +27,15 @@
   opacity: 60%;
 }
 
-ul li:hover ul {
+.dropdown {
+  position: fixed;
+  top:100px;
+  right: auto;
+  width: auto;
+  z-index: 10;
+}
+
+/* ul li:hover ul {
   display: block;
 }
 
@@ -37,7 +45,7 @@ ul li ul {
   right: auto;
   width: auto;
   display: none;
-}
+} */
 
 .leaderboard {
   align-items: flex-end;
